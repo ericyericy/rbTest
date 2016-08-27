@@ -8,13 +8,14 @@ class Person
 	end
 
 	def greet
-		# puts "Hello, #{@name}"  ???
+		# puts "Hello, #{@name}"
 		puts "Hello, #{name}"
 	end
 end
 
 bob = Person.new("bob", 30)
-bob.greet
+puts bob.greet
+
 
 bob.name = "Jason"
 bob.age = 15

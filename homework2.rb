@@ -1,3 +1,5 @@
+require 'pry'
+
 # homework1
 # 剪刀石頭布
 # 先要使用者輸入剪刀石頭或布的其中一個選項
@@ -14,6 +16,7 @@ begin #可以美化輸出
   begin 
     puts "please choose one of the following: R / P / S"
     user_input = gets.chomp.upcase
+    # binding.pry 
   end while !["R", "P", "S"].include?(user_input) 
 
   #接下來請把剩下的部份寫出來...
