@@ -13,7 +13,7 @@
   ```ruby
   put "str1 + str2 :會消耗教多記憶體"
   puts str1 + str2
-  put "/#/{str1/}/#/{str2/} :字串內插較省記憶體"
+  put '#{str1}#{str2} :字串內插較省記憶體'
   puts "#{str1}#{str2}"
   ```
 
