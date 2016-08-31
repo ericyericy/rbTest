@@ -3,6 +3,7 @@
   fixnum = 10
   float = 10.03
   ```
+
 2. 今天有兩個字串：
   ```ruby
   str1 = "Hallo Welt!"
@@ -29,8 +30,8 @@
   ```
 
 5. 請用一行程式碼把一個內容為整數 1 到 100 的陣列裡所有的值加上 2
-```ruby
-```
+  ```ruby
+  ```
 
 6. 請寫出以下兩行程式碼迴傳的值，並解釋他們呼叫的方法差別為何：
   ```ruby
@@ -41,10 +42,10 @@
   ```
 
 7. 請列出兩種產出亂數的方法
-```ruby
-[1, 2, 3, 4, 5].sample
-[1, 2, 3, 4, 5].shuffle.last
-```
+  ```ruby
+  [1, 2, 3, 4, 5].sample
+  [1, 2, 3, 4, 5].shuffle.last
+  ```
 
 8. 以下這段程式碼：
   ```ruby
@@ -67,12 +68,12 @@
   else
     return "var is less than 5"
   end
-  
+
   puts var >= 5 ? "var is greater than or equal to 5" : "var is less than 5"
   ```
 
 11. 請列出兩種不同的 hash 寫法
-```ruby
-hash1 = { :name => 'bob', :age => 25, :phone => "123456" }
-hash2 = { name: 'bob', age: 25, phone: "123456" }
-```
+  ```ruby
+  hash1 = { :name => 'bob', :age => 25, :phone => "123456" }
+  hash2 = { name: 'bob', age: 25, phone: "123456" }
+  ```
