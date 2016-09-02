@@ -60,13 +60,44 @@
   User.new("Bob", "male", "Engineer")
   ```
 請寫出 User class 的 initialize method
+  ```ruby
+  class User
+    def initialize(name, sex, occupation)
+      @name = name
+      @sex = sex
+      @occupation = occupation
+    end
+  end
+  ```
 
 6. 在：
   A.  一個 class 裡，method 外面
   B.  一個 class 裡，instance method 裡
   self 分別是指向什麼?
+  ```ruby
+  class Person
+    attr_accessor :name
+
+    # A.  一個 class 裡，method 外面，self代表class自己(Person)
+    puts self
+
+    def initialize(name)
+      @name = name
+    end
+
+    def self.talk
+      puts "talk ....."
+    end
+
+    # A.  一個 class 裡，instance method 裡，self代表被呼叫的greet物件
+    def greet
+      puts "Hello, #{self}"
+    end
+  end
+  ```
 
 7. attr_accessor 的功能是什麼，它和 attr_reader、attr_writer 之間的差別是什麼？
+  
 
 8. 請說明 public 和 private method 之間的不同
 
