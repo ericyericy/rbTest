@@ -1,6 +1,8 @@
 class Player
   attr_accessor :user_input, :pc_input
   def initialize
+    @user_input
+    @pc_input
   end
 end
 

@@ -23,17 +23,6 @@
   ```ruby
   module不是class，不能new出物件，只能被include到class內使用
 
-  class Person
-    def initialize(name)
-      @name = name
-    end
-  end
-
-  class Engineer < Person
-    include Knowledge
-  end
-
-  為什麼module要放最頂端？
   module Knowledge
     def program
       puts "I know how to program"
@@ -42,6 +31,16 @@
     def sale
       puts "I know how to sale"
     end
+  end
+
+  class Person
+    def initialize(name)
+      @name = name
+    end
+  end
+
+  class Engineer < Person
+    include Knowledge
   end
 
   jason = Engineer.new("Jason")
@@ -97,7 +96,7 @@
   ```
 
 7. attr_accessor 的功能是什麼，它和 attr_reader、attr_writer 之間的差別是什麼？
-  
+
 
 8. 請說明 public 和 private method 之間的不同
 
