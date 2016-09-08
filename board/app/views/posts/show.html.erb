@@ -1,0 +1,16 @@
+<div class="container">
+	<%= render "shared/title", title: "Post Content" %>
+	<div>
+		<div class="well">
+			<h2>
+				<%= @post.title %>
+			</h2>
+			<p>
+				<%= @post.content%>
+			</p>
+			<div class="text-right">
+				<%= link_to "Back to Post List", posts_path %>
+			</div>
+		</div>
+	</div>	
+</div>

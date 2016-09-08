@@ -1,0 +1,15 @@
+<div class="container">
+	<%= render "shared/title", title: "Posts List" %>
+	<% @posts.each do |post| %>
+	<div>
+		<div class="well">
+			<h2>
+				<%= post.title %>
+			</h2>
+			<span>
+				<%= link_to "Read More ...", post_path(post) %>
+			</span>
+		</div>
+	</div>
+	<% end %>	
+</div>

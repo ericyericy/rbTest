@@ -1,0 +1,24 @@
+<div class="container">
+	<%= render "shared/title", title: "Post Content" %>
+
+	<div class="well">
+		<%= form_for @post do |f| %>
+			<div class="form-group">
+				<%= f.label :title %>
+				<br/>
+				<%= f.text_field :title %>
+			</div>
+			<br/>
+			<div class="form-group">
+				<%= f.label :content %>
+				<br/>
+				<%= f.text_area :content, rows: 10 %>
+			</div>
+			<br/>
+			<%= f.submit(@post.new_record? ? 'Create Post' : 'Update Post', class: 'btn btn-primary') %>
+		<% end %>
+		<div class="text-right">
+			<%= link_to 'Back to Post List', posts_path %>
+		</div>
+	</div>
+</div>
